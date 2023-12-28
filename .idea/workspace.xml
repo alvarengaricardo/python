@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="19cf5602-0c23-4d8d-976e-f1127fb5b12a" name="Changes" comment="hello" />
+    <list default="true" id="19cf5602-0c23-4d8d-976e-f1127fb5b12a" name="Changes" comment="hello">
+      <change beforePath="$PROJECT_DIR$/01-introdução_Python/01-Hello.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-introdução_Python/02-Variáveis e tipos.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-introdução_Python/03-Operadores Aritméticos.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-introdução_Python/04-Operadores Relacionais.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-introdução_Python/05-Operadores Lógicos - AND, OR, NOT.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-introdução_Python/06-Condicionais - if, elif, else.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-introdução_Python/07-Função print().ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-introdução_Python/08-Laços de Repetição.ipynb" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
