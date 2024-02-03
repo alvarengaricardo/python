@@ -1,3 +1,18 @@
+'''
+
+Treinamento em Python
+Desenvolvimento de um App para restaurantes
+
+'''
+
+import os
+
+def finalizar_app():
+    os.system('cls')
+    print('Finalizando App\n')
+
+
+
 print("""
 ░██████╗░█████╗░██████╗░░█████╗░██████╗░  ███████╗██╗░░██╗██████╗░██████╗░███████╗░██████╗░██████╗
 ██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔══██╗  ██╔════╝╚██╗██╔╝██╔══██╗██╔══██╗██╔════╝██╔════╝██╔════╝
@@ -21,4 +36,4 @@ elif opcao_escolhida == 2:
 elif opcao_escolhida == 3:
     print('Ativar restaurante')
 else:
-    print('Encerrando o programa')
+    finalizar_app()
