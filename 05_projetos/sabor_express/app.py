@@ -7,6 +7,19 @@ Desenvolvimento de um App para restaurantes
 
 import os
 
+
+restaurantes = []
+
+def cadastrar_novo_restaurante():
+    os.system('cls')
+    print('Cadastro de novos restaurantes\n')
+    nome_do_restaurante = input('Digite nome do novo restaurante: ')
+    restaurantes.append(nome_do_restaurante)
+    print(f'O restaurante {nome_do_restaurante} foi cadastrado com sucesso.')
+    input('Digite uma tecla para voltar ao menu principal. ')
+    main()
+
+
 def opcao_invalida():
     print('Opção inválida!\n')
     input('Digite uma tecla para voltar ao menu principal')
@@ -39,7 +52,7 @@ def escolher_opcoes():
         opcao_escolhida = int(input('Escolha uma opção: '))
         match opcao_escolhida:
             case 1:
-                print('Adicionar restaurante')
+                cadastrar_novo_restaurante()
             case 2:
                 print('Listar restaurantes')
             case 3:
