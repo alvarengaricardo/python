@@ -25,7 +25,8 @@ def listar_restaurantes():
     print('Lista de Restaurantes')
     for restaurante in restaurantes:
         print(restaurante)
-    os.system('pause')
+    input('Digite uma tecla para voltar ao menu principal. ')
+    main()
 
 def opcao_invalida():
     print('Opção inválida!\n')
