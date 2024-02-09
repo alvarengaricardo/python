@@ -7,36 +7,41 @@ Desenvolvimento de um App para restaurantes
 
 import os
 
-
 restaurantes = ['Pizzaria', 'Churrascaria']
 
-def cadastrar_novo_restaurante():
+
+def voltar_menu():
+    input('\nDigite uma tecla para voltar ao menu principal. ')
+    main()
+
+
+def exibir_subtitulo(texto):
     os.system('cls')
-    print('Cadastro de novos restaurantes\n')
+    print('\n' + texto + '\n')
+
+
+def cadastrar_novo_restaurante():
+    exibir_subtitulo('Cadastro de novos restaurantes:')
     nome_do_restaurante = input('Digite nome do novo restaurante: ')
     restaurantes.append(nome_do_restaurante)
     print(f'O restaurante {nome_do_restaurante} foi cadastrado com sucesso.')
-    input('Digite uma tecla para voltar ao menu principal. ')
-    main()
+    voltar_menu()
 
 
 def listar_restaurantes():
-    os.system('cls')
-    print('Lista de Restaurantes')
+    exibir_subtitulo('Lista de Restaurantes:')
     for restaurante in restaurantes:
         print(restaurante)
-    input('Digite uma tecla para voltar ao menu principal. ')
-    main()
+    voltar_menu()
+
 
 def opcao_invalida():
     print('Opção inválida!\n')
-    input('Digite uma tecla para voltar ao menu principal')
-    main()
+    voltar_menu()
 
 
 def finalizar_app():
-    os.system('cls')
-    print('Finalizando App\n')
+    exibir_subtitulo('Finalizando App\n')
 
 
 def exibir_nome():
