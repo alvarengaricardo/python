@@ -29,7 +29,9 @@ def exibir_subtitulo(texto):
 def cadastrar_novo_restaurante():
     exibir_subtitulo('Cadastro de novos restaurantes:')
     nome_do_restaurante = input('Digite nome do novo restaurante: ')
-    restaurantes.append(nome_do_restaurante)
+    categoria = input(f'Categoria de {nome_do_restaurante}: ')
+    dados_restaurante = {'nome': nome_do_restaurante, 'categoria': categoria, 'ativo': False}
+    restaurantes.append(dados_restaurante)
     print(f'O restaurante {nome_do_restaurante} foi cadastrado com sucesso.')
     voltar_menu()
 
