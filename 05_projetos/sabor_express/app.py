@@ -7,7 +7,13 @@ Desenvolvimento de um App para restaurantes
 
 import os
 
-restaurantes = ['Pizzaria', 'Churrascaria']
+# com listas:
+# restaurantes = ['Pizzaria', 'Churrascaria']
+
+# com dicionários
+restaurantes = [{'nome': 'Praça', 'categoria': 'Japonesa', 'ativo': False},
+                {'nome': 'Pizza Suprema', 'categoria': 'Pizza', 'ativo': True},
+                {'nome': 'Cantina', 'categoria': 'Italiana', 'ativo': False}]
 
 
 def voltar_menu():
@@ -31,7 +37,11 @@ def cadastrar_novo_restaurante():
 def listar_restaurantes():
     exibir_subtitulo('Lista de Restaurantes:')
     for restaurante in restaurantes:
-        print(restaurante)
+        nome_restaurante = restaurante['nome']
+        categoria_restaurante = restaurante['categoria']
+        ativo = restaurante['ativo']
+        ativo = 'Ativo' if ativo else 'Não Ativo'
+        print(f'- {nome_restaurante} | {categoria_restaurante} | {ativo}')
     voltar_menu()
 
 
